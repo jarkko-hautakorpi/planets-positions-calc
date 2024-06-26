@@ -1,0 +1,14 @@
+CREATE TABLE `PlanetAngles` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`datetime` DATETIME NULL DEFAULT NULL,
+	`venus` DECIMAL(10,4) NOT NULL DEFAULT '0.0000',
+	`mars` DECIMAL(10,4) NOT NULL DEFAULT '0.0000',
+	`jupiter` DECIMAL(10,4) NOT NULL DEFAULT '0.0000',
+	`saturn` DECIMAL(10,4) NOT NULL DEFAULT '0.0000',
+	INDEX `Index 1` (`id`) USING BTREE
+)
+COMMENT='Significant planet angles according to John Nelson'
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=0
+;
